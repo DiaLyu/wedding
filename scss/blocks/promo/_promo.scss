@@ -1,0 +1,73 @@
+.promo{
+    height: 790px;
+    position: relative;
+    background: #f4f4f4;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        z-index: 10;
+    }
+    header{
+        height: 80px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .header__logo{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    &__photos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 635px;
+        }
+    }
+    .bg-flowers{
+        position: absolute;
+        background: url('../img/bg/frowers.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+    }
+    h1{
+        font-family: 'Ludvig van Bethoveen';
+        font-size: 85px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 50;
+        color: #3d3e43;
+        span{
+            font-family: 'Ludvig van Bethoveen';
+            font-size: 85px;
+            padding-left: 102px;
+            color: #3d3e43;
+        }
+    }
+    &__and{
+        position: absolute;
+        left: 130px;
+        font-size: 86px;
+        color: gray;
+        z-index: 40;
+        opacity: 0.4;
+    }
+}

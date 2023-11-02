@@ -1,0 +1,26 @@
+.dear{
+    position: relative;
+    background: #f4f4f4;
+    padding: 80px 0 90px;
+    text-align: center;
+    .container{
+        max-width: 656px;
+    }
+    &__speech{
+        margin-bottom: 70px;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    &__date-place{
+        display: flex;
+        justify-content: end;
+        p{
+            text-align: end;
+            width: 70%;
+            font-size: 33px;
+            font-weight: 600;
+            color: #862f35;
+        }
+    }
+}

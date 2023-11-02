@@ -1,0 +1,18 @@
+.arrival{
+    background: #f4f4f4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+    &__when-where{
+        padding: 45px;
+        h3 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #862f35;
+        }
+    }
+}

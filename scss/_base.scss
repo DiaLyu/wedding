@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #3d3e43;
+    // background: #f1eeec;
+    font-size: 30px;
+}
+.container{
+    max-width: 1482px;
+    margin: 0 auto;
+    position: relative;
+}
+.title-section{
+    font-family: 'Ludvig van Bethoveen';
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    color: #3d3e43;
+    margin-bottom: 30px;
+    text-align: center;
+}

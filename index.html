@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр & Александра</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@100;400;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="promo">
+        <header>
+            <div class="container">
+                <div class="header__logo">Приглашение</div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="promo__photos">
+                <img src="./img/photo/alexs3.png" alt="фотография" class="promo__photos-people">
+            </div>
+            <h1>Александр <span class="promo__and">&</span> <span>Александра</span></h1>
+        </div>
+        <div class="bg-flowers">
+            <!-- <img src="./img/bg/frowers.jpg" alt="цветы"> -->
+        </div>
+    </section>
+
+    <section class="dear">
+        <div class="container">
+            <h2 class="dear__people title-section">Дорогие друзья и родные</h2>
+            <div class="dear__speech">
+                <p>Совсем скоро состоится очень важное и радостное для нас событие - наша свадьба!</p>
+                <p>Мы не представляем этот день без Вас - самых близких и родных людей</p>
+                <p>Поэтому будем рады, если Вы разделите этот праздник вместе с нами</p>
+            </div>
+            <div class="dear__date-place">
+                <p>
+                    Будем ждать Вас 8 декабря в 16:30 по адресу Завьяловский р-н, д.Башур, большой банкетный зал "Завьяловский"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="arrival">
+        <img src="./img/bg/wedding_table.jpg" alt="Свадебная фотография">
+        <div class="arrival__when-where">
+            <h3>Когда?</h3>
+            <p>8 декабря 2023</p>
+            <p>В 16:30 Сбор гостей</p>
+        </div>
+        <div class="arrival__when-where">
+            <h3>Где?</h3>
+            <p>Удмуртская республика, Завьяловский р-н, д.Башур, большой банкетный зал "Завьяловский"</p>
+        </div>
+        <img src="./img/bg/plates.jpg" alt="Свадебная фотография">
+    </section>
+
+    <section class="program">
+        <div class="container">
+            <h2 class="program__title title-section">Программа дня</h2>
+
+            <div class="program__content">
+                <ul class="program__time">
+                    <li><div class="program__time__item">16:30</div> Сбор гостей</li>
+                    <li><div class="program__time__item">17:00</div> Торжественная церемония</li>
+                    <li><div class="program__time__item">17:30</div> Банкет</li>
+                    <li><div class="program__time__item">20:00</div> Вынос торта</li>
+                    <li><div class="program__time__item">22:00</div> Дискотека</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="dress-code">
+        <div class="container">
+            <h2 class="dress-code__title title-section">Дресс-код</h2>
+            <div class="dress-code__subtitle">Будем признательны, если поддержите палитру нашей свадьбы</div>
+            <div class="dress-code__palette">
+                <div class="dress-code__palette__color black"></div>
+                <div class="dress-code__palette__color white"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/zavyalovskiy/43071571303/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Завьяловский</a>
+            <a href="https://yandex.ru/maps/11148/udmurt-republic/category/banquet_hall/184108315/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Банкетный зал в Удмуртской Республике</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=53.424852%2C56.786800&mode=poi&poi%5Bpoint%5D=53.423263%2C56.786556&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D43071571303&z=17.02" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </section>
+
+    <section class="happy-day">
+        <div class="container">
+            <h2 class="happy-day__title title-section">
+                Мы с нетерпением ждем самого счастливого дня в нашей жизни!
+            </h2>
+        </div>
+    </section>
+
+    <section class="timer">
+        <div class="container">
+            <h3>До торжества осталось </h3>
+            <div class="timer__container">
+                <div class="timer__block">
+                    <span id="days">00</span>
+                    дней
+                </div>
+                <div class="timer__block">
+                    <span id="hours">00</span>
+                    часов
+                </div>
+                <div class="timer__block">
+                    <span id="minutes">00</span>
+                    минут
+                </div>
+                <div class="timer__block">
+                    <span id="seconds">00</span>
+                    секунд
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="form__request">
+            <h3>Подтвердите, пожалуйста, свое присутствие на торжестве!</h3>
+            <p>Будем ждать ответа до</p>
+            <p class="form__request__data">24.11.2023</p>
+        </div>
+        <form action="" class="form__body" id="form">
+            <div class="form__body__container">
+                <div class="form__body__person">
+                    <div class="form__body__person__item">
+                        <div>
+                            <input type="text" name="name" class="form__body__person__inf" id="name" placeholder="Имя" required>
+                            <input type="text" name="surname" class="form__body__person__inf" id="surname" placeholder="Фамилия" required>
+                        </div>
+                        <div id="check-child">
+                            <input type="checkbox" id="children" name="child" />
+                            <label for="children" class="lb-children">Это ребенок</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__body__message">
+                    *Для каждого человека заполняйте поля формы отдельно и также подтвержайте, нажав на соответствующую кнопку
+                </div>
+                <!-- <input type="button" value="Добавить человека" id="form__body__add" class="form__body__add"> -->
+            </div>
+            <input type="submit" value="Подтвердить" class="form__sending"/>
+        </form>
+    </section>
+
+    <section class="contact">
+        <h2 class="contact__title title-section">Контакты</h2>
+        <div class="contact__phones">
+            <div class="contact__phones__item">
+                <p>Жених: <a href="tel:+79223186776">8 (922)-318-67-76</a></p>
+                <div class="contact__icons">
+                    <img src="./icons/telegram.svg" alt="Телеграм">
+                </div>
+            </div>
+            <div class="contact__phones__item">
+                <p>Невеста: <a href="tel:+79526605125">8 (952)-660-51-25</a></p>
+                <div class="contact__icons">
+                    <img src="./icons/telegram.svg" alt="Телеграм">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2 class="footer__title title-section">Мы Вас ждем!</h2>
+        <div class="footer__line"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
