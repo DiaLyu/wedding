@@ -143,6 +143,12 @@ window.addEventListener('DOMContentLoaded', () => {
         // склеиваем параметры в одну строку
         formBody = formBody.join("&");
 
+        const form_sending = document.querySelector('.form__sending');
+        const img_spinner = document.querySelector('#img-spinner');
+
+        form_sending.classList.add('hide');
+        img_spinner.classList.remove('hide');
+
         // выполняем отправку данных в Google Apps
         const result = await fetch(URL_APP, {
             method: "POST",
@@ -156,17 +162,19 @@ window.addEventListener('DOMContentLoaded', () => {
             .then((res) => res.json())
             .catch((err) => alert("Ошибка!"))
             // .then((res) => console.log(res));
-            
+        
+        let name_guest = name.value.trim();
         if( result.type === 'success' ) {
             name.value = '';
             surname.value = '';
             child.checked = false;
-            alert('Спасибо за заявку!')
+            alert(`${name_guest}, мы будем рады вас увидеть! Будем ждать!)`);
         }
         if( result.type === 'error' ) {            
-            alert(`Ошибка( ${result.errors}`)
+            alert(`Ошибка( ${result.errors}. В этом случае сообщите о проблеме жениху или невесте`)
         }
-
+        form_sending.classList.remove('hide');
+        img_spinner.classList.add('hide');
 
     });
 });
